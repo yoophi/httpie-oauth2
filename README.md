@@ -4,15 +4,15 @@ httpie-oauth2
 OAuth2 plugins for [httpie](https://github.com/jkbr/httpie) 
 
 ```bash
-$ pip install git+http://github.com/akhenakh/httpie-oauth-dm.git?#egg=httpie_oauth_dm
+$ pip install git+http://github.com/yoophi/httpie-oauth2.git?#egg=httpie_oauth2
 ```
 
 Usage
 -----
 
 ```bash
-$ export API_KEY=myapikey
-$ export API_SECRET=myapisecret
+$ export API_KEY=foo
+$ export API_SECRET=secret
 $ export AUTHORIZATION_URL=http://api.hostname.com/auth/token
 $ http --auth-type=oauth2DM --auth=client-key:client-secret GET https://api.hostname.com/me 
 ```
@@ -21,7 +21,7 @@ You can also use HTTPie sessions.
 
 ```bash
 # Create session
-$ http --session=dm --auth-type=oauth2DM --auth=client-key:client-secret GET https://api.dailymotion.com/me
+$ http --session=dm --auth-type=oauth2 --auth=username:password GET https://api.hostname.com/me
     
 # Re-use auth
 $ http --session=dm GET https://api.hostname.com/me
