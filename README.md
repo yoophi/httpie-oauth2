@@ -14,7 +14,7 @@ Usage
 $ export API_KEY=foo
 $ export API_SECRET=secret
 $ export AUTHORIZATION_URL=http://api.hostname.com/auth/token
-$ http --auth-type=oauth2DM --auth=client-key:client-secret GET https://api.hostname.com/me 
+$ http --auth-type=oauth2 --auth=username:password GET https://api.hostname.com/me 
 ```
 
 You can also use HTTPie sessions.
