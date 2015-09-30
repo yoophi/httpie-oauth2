@@ -11,20 +11,21 @@ Usage
 -----
 
 ```bash
+$ export OAUTHLIB_INSECURE_TRANSPORT=1
 $ export API_KEY=foo
 $ export API_SECRET=secret
-$ export AUTHORIZATION_URL=http://api.hostname.com/auth/token
-$ http --auth-type=oauth2 --auth=username:password GET https://api.hostname.com/me 
+$ export AUTHORIZATION_URL=http://ceo.delivery.rcd.kr/api/v1.0/auth/token
+$ http --auth-type=oauth2 --auth=yoophi:secret GET http://ceo.delivery.rcd.kr/api/v1.0/me 
 ```
 
 You can also use HTTPie sessions.
 
 ```bash
 # Create session
-$ http --session=dm --auth-type=oauth2 --auth=username:password GET https://api.hostname.com/me
+$ http --session=dm --auth-type=oauth2 --auth=yoophi:secret GET http://ceo.delivery.rcd.kr/api/v1.0/me 
     
 # Re-use auth
-$ http --session=dm GET https://api.hostname.com/me
+$ http --session=dm GET http://ceo.delivery.rcd.kr/api/v1.0/me 
 ```
 
 TODO
