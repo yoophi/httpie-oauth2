@@ -14,7 +14,7 @@ Usage
 $ export API_KEY=api_key
 $ export API_SECRET=api_secret
 $ export AUTHORIZATION_URL=http://apihost/api/v1.0/auth/token
-$ http --auth-type=oauth2 --auth=yoophi:secret GET http://apihost/api/v1.0/private/endpoint 
+$ http --auth-type=oauth2 --auth=username:password GET http://apihost/api/v1.0/private/endpoint 
 ```
 
 You can also use HTTPie sessions.
